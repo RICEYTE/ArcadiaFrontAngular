@@ -1,0 +1,16 @@
+<nav id="menu">
+    <div id="links">
+        <div class="link" id="accueil-link" routerLink="accueil">Accueil</div>
+        <div class="link" id="services-link" routerLink="services">Les services</div>
+        <div class="link" id="habitats-link" routerLink="habitats">Les habitats</div>
+        <div class="link" id="contact-link" routerLink="contact">Contact</div>
+        <div>|</div>
+        <div *ngIf="!authService.session" class="link" (click)="login()">Connexion</div>
+        <div *ngIf="authService.session" class="link" (click)="login()">Bienvenue {{ authService.session.name }}</div>
+        <div *ngIf="authService.session">|</div>
+        <div *ngIf="authService.session" class="link" (click)="authService.session = undefined">Déconnexion</div>
+
+    </div>
+</nav>
+<router-outlet></router-outlet>
+
