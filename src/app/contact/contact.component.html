@@ -1,3 +1,62 @@
-<div>
-    <h1>Contact...</h1>
+<div id="contactTitle">
+    <h1>Nous contacter !</h1>
+
+
+</div>
+
+
+<div id="contactForm" class="form">
+
+    <form (ngSubmit)="onSubmit()" id="contactFormular">
+        <tr>
+            <td>
+                <div>
+                    <p>Nom</p>
+                </div>
+            </td>
+            <td>
+                <input type="text" size="45" name="nom" ngModel required>
+
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <div>
+                    <p>Prénom</p>
+                </div>
+            </td>
+            <td>
+                <input type="text" size="45" name="prenom" ngModel required>
+
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <div>
+                    <p>Email</p>
+                </div>
+            </td>
+            <td>
+                <input type="email" size="45" name="eMail" ngModel required>
+
+            </td>
+        </tr>
+        <tr>
+            <td >
+                <div>
+                    <p>Demande</p>
+                </div>
+            </td>
+            <td>
+               
+                <input type="text" size="45" id="demande" name="demande" ngModel required>
+
+            </td>
+        </tr>
+        <button type="submit" [disabled]="!this.onSubmit">
+            Envoyer</button>
+    </form>
+
 </div>

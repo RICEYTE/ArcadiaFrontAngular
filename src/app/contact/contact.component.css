@@ -1,0 +1,17 @@
+#contactForm {
+    
+    background-color: white;
+    position: relative;
+    
+    width: 40%;
+    padding-left: 35%;
+    padding-right: 35%;
+    padding-top: 2%;
+    padding-bottom: 10%;    
+   
+    
+}
+#demande{
+    line-height: 20;
+}
+

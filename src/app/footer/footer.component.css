@@ -1,5 +1,9 @@
 #footer{
     background-color: green;
     font-weight: bold;
+    position: relative;
+    padding-top: 3%;
+    padding-bottom: 2%;
+    place-items: bottom;
     
 }

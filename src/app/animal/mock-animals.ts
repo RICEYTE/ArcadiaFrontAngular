@@ -4,8 +4,8 @@ export const ANIMALS: Animal[] = [
 
     {
         id: 1,
-        name: "Bulbizarre",
-        picture: "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/001.png",
+        name: "Lion",
+        picture: "assets/images/animaux/lion.jpg",
         etat: "En forme",
         created: new Date()
     },
