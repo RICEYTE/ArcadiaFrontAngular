@@ -1,5 +1,5 @@
 {
-  "name": "arcadia-front-angular",
+  "name": "app-arcadia",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
