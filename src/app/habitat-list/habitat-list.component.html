@@ -1,0 +1,21 @@
+<h1>Les habitats</h1>
+
+<div class="container" id="enclosList">
+
+    <div class="row">
+        <div *ngFor="let habitat of habitatList" class="col m2 s6">
+            <div (click)="goToHabitat(habitat)" class="card horizontal">
+                <div class="card-image">
+                    <img [src]="habitat.picture" />
+                </div>
+                <div class="card-stacked">
+                    <div class="card-content">
+                        <p>{{ habitat.name }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<router-outlet></router-outlet>
+

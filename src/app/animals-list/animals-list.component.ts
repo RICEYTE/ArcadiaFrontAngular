@@ -3,8 +3,7 @@ import { Animal } from '../animal/animal';
 import { CommonModule } from '@angular/common';
 import { Router, RouterModule } from '@angular/router';
 import { ANIMALS } from '../animal/mock-animals';
-import { AnimalService } from '../animal.service';
-import { subscribeOn } from 'rxjs';
+
 
 @Component({
   selector: 'app-animals-list',

@@ -1,0 +1,26 @@
+
+<div class="row" id="avisList">
+    <h1>Avis sur le Zoo</h1>
+    <div *ngFor="let avis of avisList">
+
+        <div class="card-content">
+            <table class="bordered striped" id="tableAvis">
+                <tbody>
+                    <tr>
+                        <td [width]="100">
+                            <em>
+                                {{ avis.created | date:'dd/MM/yyyy' }}
+                            </em>
+                        </td>
+                        <td [width]="20">|</td>
+                        <td [width]="100">{{ avis.pseudo }}</td>
+                        <td> : </td>
+                        <td [width]="500">{{ avis.commentaire }}</td>
+
+                        
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <router-outlet></router-outlet>

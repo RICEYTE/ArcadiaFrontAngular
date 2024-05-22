@@ -1,0 +1,15 @@
+#avisList{
+    padding-left: 25%;
+    padding-right: 25%;
+    padding-top: 2%;
+    padding-bottom: 5%;
+    
+}
+#tableAvis{
+    width: 100%;
+    background-color: white;
+    border-bottom: green solid;
+    border-top: green solid;
+    padding-bottom: 1%;
+    
+}
