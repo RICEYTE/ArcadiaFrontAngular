@@ -1,1 +1,12 @@
-<p>services-list works!</p>
+<div id="serviceListHome" class="container">
+    <h1>Nos services</h1>
+    <div></div>
+
+    <div *ngFor="let service of serviceList">
+        <table id="tableServices">
+            <td [width]="100">{{ service.name }}</td>
+            <td [width]="20">|</td>
+            <td [width]="300">{{ service.description}}</td>
+        </table>
+    </div>
+</div>

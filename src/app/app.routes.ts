@@ -9,11 +9,12 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { AnimalsListComponent } from './animals-list/animals-list.component';
 import { HabitatListComponent } from './habitat-list/habitat-list.component';
 import { HabitatDetailComponent } from './habitat-detail/habitat-detail.component';
+import { ServicesListComponent } from './services-list/services-list.component';
 
 export const routes: Routes = [
     { path: '', component: AccueilComponent },
     { path: 'contact', component: ContactComponent },
-    { path: 'services', component: ServicesComponent },
+    { path: 'services', component: ServicesListComponent },
     { path: 'accueil', component: AccueilComponent },
     { path: 'habitats', component: HabitatListComponent },
     { path: 'habitat/:id', component: HabitatDetailComponent },
