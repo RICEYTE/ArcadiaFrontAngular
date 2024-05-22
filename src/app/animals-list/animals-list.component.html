@@ -1,32 +1,21 @@
-<p>Nos animaux</p>
+<h2>Nos animaux</h2>
 
 <div class="container">
-   
+
     <div class="row">
-        <div *ngFor="let animal of animalList" class="col m4 s6">
-            <div (click)="goToAnimal(animal)" class="card horizontal">
-                <div class="card-image">
-                    <img [src]="animal.picture" />
-                </div>
-                <div class="card-stacked">
-                    <div class="card-content">
-                        <p>{{ animal.race }}</p>
-                        <p><small>{{ animal.description }}</small></p>
-                        <span>
-                            {{ animal.etat }}
-                        </span>
-                    </div>
-                </div>
+        <div *ngFor="let animal of animalList; let index=index">
+            <div  *ngIf="(index + 0) % 1 == 0" (click)="goToAnimal(animal)">
+           
+                    <img [src]="animal.picture" width="100%" />
+
+                    <h2>{{ animal.race }}</h2>
+                    <p>{{ animal.description }}</p>
+
+
+            
             </div>
         </div>
     </div>
 </div>
 
-<a 
-    class="btn-floating btn-large waves-effect waves-light red z-depth-3"
-    style="position: fixed; bottom: 25px; right: 25px;"
-    routerLink="/animal/add"
->
- ➕
-</a>
 <router-outlet></router-outlet>

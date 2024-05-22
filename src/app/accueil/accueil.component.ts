@@ -4,6 +4,8 @@ import { ANIMALS } from '../animal/mock-animals';
 import { AVIS } from '../avis/mock-avis';
 import { CardBorderDirective } from '../card-border.directive';
 import { AvisListComponent } from "../avis-list/avis-list.component";
+import { PresentationComponent } from "../presentation/presentation.component";
+import { ServicesListComponent } from "../services-list/services-list.component";
 @Component({
     selector: 'app-accueil',
     standalone: true,
@@ -11,7 +13,9 @@ import { AvisListComponent } from "../avis-list/avis-list.component";
     styleUrl: './accueil.component.css',
     imports: [
         CommonModule,
-        AvisListComponent
+        AvisListComponent,
+        PresentationComponent,
+        ServicesListComponent
     ]
 })
 
