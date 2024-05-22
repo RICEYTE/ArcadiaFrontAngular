@@ -2,7 +2,7 @@ import { CommonModule, NgOptimizedImage } from '@angular/common';
 import { Component } from '@angular/core';
 import { ANIMALS } from '../animal/mock-animals';
 import { AVIS } from '../avis/mock-avis';
-
+import { CardBorderDirective } from '../card-border.directive';
 @Component({
   selector: 'app-accueil',
   standalone: true,

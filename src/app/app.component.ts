@@ -8,6 +8,7 @@ import { ContactComponent } from './contact/contact.component';
 import { ServicesComponent } from './services/services.component';
 import { HabitatsComponent } from './habitats/habitats.component';
 
+
 @Component({
     selector: 'app-root',
     standalone: true,
@@ -22,6 +23,7 @@ import { HabitatsComponent } from './habitats/habitats.component';
         ContactComponent,
         ServicesComponent,
         HabitatsComponent
+      
     ]
 })
 export class AppComponent {

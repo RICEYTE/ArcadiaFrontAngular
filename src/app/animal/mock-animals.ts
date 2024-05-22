@@ -1,6 +1,6 @@
 import { Animal } from "./animal";
 
-export const ANIMALS: Animal[] = [
+export const ANIMALS:Animal[]=[
 
     {
         id: 1,
@@ -11,14 +11,14 @@ export const ANIMALS: Animal[] = [
     },
     {
         id: 2,
-        name: "Fleurizarre",
+        name: "theo",
         picture: "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/002.png",
         etat: "En forme",
         created: new Date()
     },
     {
         id: 3,
-        name: "Fleurizarre",
+        name: "loulou",
         picture: "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/003.png",
         etat: "En forme",
         created: new Date()
